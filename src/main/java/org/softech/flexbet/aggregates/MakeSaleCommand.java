@@ -5,14 +5,18 @@
  */
 package org.softech.flexbet.aggregates;
 
-import java.sql.Timestamp;
+import org.axonframework.commandhandling.*;
+
+import java.sql.*;
 
 /**
  *
  * @author Abongwa
  */
 public class MakeSaleCommand {
+    @TargetAggregateIdentifier
     private String id;
+
     private String agent_id;
     private String product_id;
     private double product_price;

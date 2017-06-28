@@ -1,12 +1,9 @@
 package org.softech.flexbet;
 
-import config.SaleConfig;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Import;
+import org.springframework.boot.*;
+import org.springframework.boot.autoconfigure.*;
 
 @SpringBootApplication
-@Import({SaleConfig.class})
 public class FlexbetApplication {
 
 	public static void main(String[] args) {
